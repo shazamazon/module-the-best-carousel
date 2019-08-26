@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import InfoBox from './components/InfoBox.jsx';
 import axios from 'axios';
+import InfoBox from './components/InfoBox.jsx';
 import loading from './components/loading.js';
 
 class Carousel extends Component {
@@ -28,12 +28,16 @@ class Carousel extends Component {
     };
   }
 
-  /* /////////////////////// Functions to Mounting Items //////////////////////////
+  /* /////////////////////// Functions for Mounting Items //////////////////////////
   ///////////////////////////////////////////////////////////////////////////////*/
 
   componentDidMount() {
     this.setState({itemData: [], itemsRendered: loading});
+    this.getCategory();
     
+  }
+
+  getCategory() {
     axios.get('/item', {
       params: {
         ProductId: 5 //replace with global ID ////////////////////////////////
