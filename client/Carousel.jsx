@@ -23,7 +23,8 @@ class Carousel extends Component {
         rightHover: 'https://shazamazon.s3.us-east-2.amazonaws.com/Carousel+Arrows/rightArrowHover.jpg',
         leftRecentClick: 'https://shazamazon.s3.us-east-2.amazonaws.com/Carousel+Arrows/leftArrowRecentlyClicked.jpg',
         rightRecentClick: 'https://shazamazon.s3.us-east-2.amazonaws.com/Carousel+Arrows/rightArrowRecentlyClicked.jpg'
-      }
+      },
+      nameHover: 'carouselName'
     };
   }
 
